@@ -803,7 +803,8 @@ mget *
 
 ```powershell
 dirbuster
-gobuster dir -u http://example.com -w /path/to/wordlist.txt
+gobuster dir -u http://192.168.50.20:8000 -w /usr/share/wordlists/dirb/common.txt -t 5 # dir - dir mode, -u IP, -w word list, -t number to threads (default 10)
+feroxbuster --url http://192.168.193.16/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
 python3 dirsearch.py -u http://example.com -w /path/to/wordlist.txt
 ```
 
